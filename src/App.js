@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./styles.css";
 import cities from "./cities.json";
 import { Map } from "./components/Map";
-import img_sun from "../public/img/img_sun.svg";
+import img_sun from "./img_sun.svg";
 
 const CITIES_LENGTH = cities.length;
 const googleKey = "AIzaSyDlNDdvaxU7q4ASnvXZCgfhlJ7CO7TOEFA";
