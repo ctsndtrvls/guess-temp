@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./styles.css";
 import cities from "./cities.json";
 import { Map } from "./components/Map";
-import img_sun from "./img_sun.svg";
+import img_sun from "../public/img/img_sun.svg";
 
 const CITIES_LENGTH = cities.length;
 const googleKey = "AIzaSyDlNDdvaxU7q4ASnvXZCgfhlJ7CO7TOEFA";
@@ -32,11 +32,13 @@ export default function App() {
     const randomCityNumber = Math.floor(Math.random() * CITIES_LENGTH);
     const newCity = cities[randomCityNumber];
 
-    fetch(`https://weatherdbi.herokuapp.com/data/weather/${newCity.city}`)
+    fetch(
+      ` https://api.openweathermap.org/data/2.5/weather?q=${newCity.city}&appid=4e1a40e159f696ee17288b5b49ac635d&units=metric`
+    )
       .then((res) => res.json())
       .then((data) => {
-        if (data?.currentConditions?.temp?.c !== undefined) {
-          updateTemperaturActual(data.currentConditions.temp.c);
+        if (data?.main?.temp !== undefined) {
+          updateTemperaturActual(data?.main?.temp);
         } else {
           goToGuess();
         }
