@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./styles.css";
 import cities from "./cities.json";
 import { Map } from "./components/Map";
-import img_sun from "../public/img/img_sun.svg";
+// import img_sun from "../public/img/img_sun.svg";
 
 const CITIES_LENGTH = cities.length;
 const googleKey = "AIzaSyDlNDdvaxU7q4ASnvXZCgfhlJ7CO7TOEFA";
@@ -129,7 +129,8 @@ export default function App() {
 
     return (
       <div className="container-start">
-        <img src={img_sun} alt="sun" />
+        {/* <img src={img_sun} alt="sun" /> */}
+        <img src={"./img/img_sun.svg"} alt="sun" />
         <h1>Temperature Oracle</h1>
         <h2>Oracle suggests a city, you guess the temperature there</h2>
         <button className="btn" onClick={goToGuess}>
