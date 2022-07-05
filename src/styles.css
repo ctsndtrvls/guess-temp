@@ -1,0 +1,183 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+* {
+  font-family: "Inter", sans-serif;
+  /* margin: 0px; */
+}
+
+.container-start {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-guess {
+  display: grid;
+}
+
+.container-guess .city-country {
+  grid-column: 1 / 2;
+}
+
+.container-guess input {
+  grid-column: 1 / 2;
+  justify-content: center;
+}
+
+.container-start img {
+  margin: 138px auto 0px auto;
+  width: 62px;
+  height: 62px;
+}
+
+.container-start h1 {
+  display: inline-block;
+  margin: 12px auto;
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 36px;
+  color: black;
+}
+
+.container-start h2 {
+  color: #9b9b9b;
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: 400;
+  display: inline-block;
+  margin: 6px auto;
+}
+
+.btn {
+  width: 100px;
+  height: 22px;
+  background-color: black;
+  color: white;
+  margin: 0px;
+  border-radius: 5px;
+  font-weight: 700;
+}
+
+.container-start .btn {
+  margin: 37px auto;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+label {
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 36px;
+  display: inline-block;
+  margin: 0px;
+}
+
+input {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #bdbdbd;
+  border-radius: 8px;
+  width: 102px;
+  height: 38px;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 36px;
+  color: #5f5f5f;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.container-guess input {
+  margin-top: 36px;
+}
+
+.container-guess .btn {
+  margin: 15px auto;
+  padding: 0;
+}
+
+.container-results {
+  position: absolute;
+  display: inline-block;
+  right: 15px;
+  top: 11px;
+}
+
+.container-results .your-score {
+  float: right;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+}
+
+.container-results .score-number {
+  float: right;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 27px;
+  color: #ffffff;
+  background: #13aaff;
+  border-radius: 5px;
+  width: 40px;
+  height: 27px;
+  text-align: center;
+}
+
+.container-diff {
+  display: grid;
+  column-gap: 79px;
+  row-gap: 16px;
+  font-size: 9px;
+  line-height: 11px;
+  font-weight: 400;
+  color: #878787;
+}
+
+.city-country {
+  grid-column: 1 / 3;
+  display: inline-block;
+  margin: 12px auto;
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 36px;
+  color: black;
+  margin-top: 16px;
+  margin-bottom: 0px;
+}
+
+.diff-guessed {
+  text-align: right;
+  grid-column: 1 / 2;
+}
+
+.diff-actual {
+  text-align: left;
+  grid-column: 2 / 3;
+}
+
+.temp-diff {
+  margin: 7px auto 0px -60px;
+}
+
+.container-diff .btn {
+  grid-column: 1 / 3;
+  margin: 7px auto 15px -80px;
+}
+
+.temp {
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 36px;
+  color: #5f5f5f;
+}
+
+.map {
+  margin-top: 74px;
+}
