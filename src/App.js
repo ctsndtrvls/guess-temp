@@ -6,7 +6,7 @@ import { Map } from "./components/Map";
 
 const CITIES_LENGTH = cities.length;
 // const googleKey = "AIzaSyDlNDdvaxU7q4ASnvXZCgfhlJ7CO7TOEFA";
-const googleKey = process.env.GOOGLE_KEY;
+const googleKey = process.env.REACT_APP_GOOGLE_KEY;
 console.log(googleKey);
 
 export default function App() {
