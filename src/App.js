@@ -40,7 +40,6 @@ export default function App() {
         if (data?.main?.temp !== undefined) {
           updateTemperaturActual(data?.main?.temp);
         } else {
-          alert("stop");
           goToGuess();
         }
       });
