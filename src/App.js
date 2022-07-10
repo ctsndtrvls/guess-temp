@@ -5,7 +5,7 @@ import { Map } from "./components/Map";
 // import img_sun from "../public/img/img_sun.svg";
 
 const CITIES_LENGTH = cities.length;
-const googleKey = process.env.GOOGLE_KEY;
+const googleKey = process.env.REACT_APP_GOOGLE_KEY;
 
 export default function App() {
   const [mode, updateMode] = useState("start");
