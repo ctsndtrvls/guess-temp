@@ -55,6 +55,7 @@ export default function App() {
           const coords = data.results[0].geometry.location;
           setCoords(coords);
         } else {
+          alert(googleKey);
           goToGuess();
         }
       });
