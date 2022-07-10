@@ -40,6 +40,7 @@ export default function App() {
         if (data?.main?.temp !== undefined) {
           updateTemperaturActual(data?.main?.temp);
         } else {
+          alert("stop");
           goToGuess();
         }
       });
@@ -55,7 +56,6 @@ export default function App() {
           const coords = data.results[0].geometry.location;
           setCoords(coords);
         } else {
-          alert(googleKey);
           goToGuess();
         }
       });
